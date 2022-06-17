@@ -1,5 +1,6 @@
 import { module, test } from 'qunit';
 import { setupTest } from 'super-rentals/tests/helpers';
+import { later } from '@ember/runloop';
 
 module('Unit | Model | rental', function (hooks) {
   setupTest(hooks);
@@ -36,5 +37,11 @@ module('Unit | Model | rental', function (hooks) {
 
     rental.category = 'Estate';
     assert.strictEqual(rental.type, 'Standalone');
+  });
+
+  test('checking test isolation validation', function (assert) {
+    assert.expect(1);
+    later(() => {}, 1000);
+    assert.ok(true);
   });
 });
