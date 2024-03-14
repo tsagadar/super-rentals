@@ -79,5 +79,6 @@
   },
   "ember": {
     "edition": "octane"
-  }
+  },
+  "packageManager": "yarn@4.1.1"
 }
