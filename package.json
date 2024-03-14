@@ -11,7 +11,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "ember build --environment=production",
+    "build": "ember build --environment=production && yarn sentry:sourcemaps",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
     "lint:css": "stylelint \"**/*.css\"",
     "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
@@ -22,7 +22,8 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
-    "test:ember": "ember test"
+    "test:ember": "ember test",
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org husqvarna-ab --project ember-super-rentals-sandbox ./dist/assets && sentry-cli sourcemaps upload --org husqvarna-ab --project ember-super-rentals-sandbox ./dist/assets"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -33,6 +34,8 @@
     "@ember/test-helpers": "^3.3.0",
     "@glimmer/component": "^1.1.2",
     "@glimmer/tracking": "^1.1.2",
+    "@sentry/cli": "^2.30.2",
+    "@sentry/ember": "^7.107.0",
     "broccoli-asset-rev": "^3.0.0",
     "concurrently": "^8.2.2",
     "ember-auto-import": "^2.7.2",

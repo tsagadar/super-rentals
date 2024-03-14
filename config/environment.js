@@ -47,5 +47,7 @@ module.exports = function (environment) {
 
   ENV.MAPBOX_ACCESS_TOKEN = process.env.MAPBOX_ACCESS_TOKEN;
 
+  ENV.SENTRY_DSN = process.env.SENTRY_DSN;
+
   return ENV;
 };
