@@ -47,7 +47,13 @@ module.exports = function (environment) {
 
   ENV.MAPBOX_ACCESS_TOKEN = process.env.MAPBOX_ACCESS_TOKEN;
 
-  ENV.SENTRY_DSN = process.env.SENTRY_DSN;
+  const dsn = process.env.SENTRY_DSN;
+  const release = `super-rentals-${new Date().toISOString().slice(0, 19)}`;
+  ENV['@sentry/ember'] = {
+    ignoreEmberOnErrorWarning: true, // Will silence Ember.onError warning without the need of using Ember debugging tools. False by default.
+    disablePerformance: true, // Will disable automatic instrumentation of performance. Manual instrumentation will still be sent.
+    sentry: { dsn, release },
+  };
 
   return ENV;
 };
