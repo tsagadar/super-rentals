@@ -8,6 +8,7 @@ import { captureConsoleIntegration } from '@sentry/integrations';
 import sdkFingerprinting from 'super-rentals/utils/sentry';
 
 Sentry.init({
+  debug: true,
   integrations: [captureConsoleIntegration({levels:['error']})],
   ignoreErrors: [
     'TransitionAborted',
