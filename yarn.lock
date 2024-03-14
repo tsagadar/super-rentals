@@ -4747,20 +4747,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broccoli-caching-writer@npm:^2.2.0":
-  version: 2.3.1
-  resolution: "broccoli-caching-writer@npm:2.3.1"
-  dependencies:
-    broccoli-kitchen-sink-helpers: "npm:^0.2.5"
-    broccoli-plugin: "npm:1.1.0"
-    debug: "npm:^2.1.1"
-    rimraf: "npm:^2.2.8"
-    rsvp: "npm:^3.0.17"
-    walk-sync: "npm:^0.2.5"
-  checksum: 10c0/41f9370290e1df5f5aadb2e48aa3d724c831ea39cf460e8a3fa139624d99fc920843ae3f61a0c31f67a1475e0fa2fd83cad9406073bbf0446b2fccc92281677e
-  languageName: node
-  linkType: hard
-
 "broccoli-caching-writer@npm:^3.0.3":
   version: 3.0.3
   resolution: "broccoli-caching-writer@npm:3.0.3"
@@ -4896,16 +4882,6 @@ __metadata:
     minimatch: "npm:^3.0.0"
     walk-sync: "npm:^2.0.2"
   checksum: 10c0/0cffcd9e8b075151348a59ff37e20a3b235e70b3c8ae58c39b6dfe35d2242e00d06d670cac8a412b459a04fb6427ae186ddaf2834f6492ed4a96163f119c7f27
-  languageName: node
-  linkType: hard
-
-"broccoli-kitchen-sink-helpers@npm:^0.2.5":
-  version: 0.2.9
-  resolution: "broccoli-kitchen-sink-helpers@npm:0.2.9"
-  dependencies:
-    glob: "npm:^5.0.10"
-    mkdirp: "npm:^0.5.1"
-  checksum: 10c0/633c5749f5261041ec235f9f5c4a64bc9d262a03738f9c47d352aee4e1f1bc3e780db439ba8ea60ea35f563aabb0d4cb4e76a84a6e2caa72caa95130c1972258
   languageName: node
   linkType: hard
 
@@ -5045,18 +5021,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broccoli-plugin@npm:1.1.0":
-  version: 1.1.0
-  resolution: "broccoli-plugin@npm:1.1.0"
-  dependencies:
-    promise-map-series: "npm:^0.2.1"
-    quick-temp: "npm:^0.1.3"
-    rimraf: "npm:^2.3.4"
-    symlink-or-copy: "npm:^1.0.1"
-  checksum: 10c0/fbd081d9f4f57c5b69d23b40955db3852e1edc09ba2000cbf6b07d69d5941c0d1f9d617a4fab5ac9a429cad91ee44f240645b34f9b46827802914047486bf682
-  languageName: node
-  linkType: hard
-
 "broccoli-plugin@npm:^1.0.0, broccoli-plugin@npm:^1.1.0, broccoli-plugin@npm:^1.2.0, broccoli-plugin@npm:^1.2.1, broccoli-plugin@npm:^1.3.0, broccoli-plugin@npm:^1.3.1":
   version: 1.3.1
   resolution: "broccoli-plugin@npm:1.3.1"
@@ -5137,19 +5101,6 @@ __metadata:
   dependencies:
     broccoli-node-api: "npm:^1.6.0"
   checksum: 10c0/619643871e7c3765cc55890809bb72d48aff2bcb898aca6a4b729fd3b49a1141833b718a94043126183adc7a7f01cf730f063f3b4323b8b174696a987bc3964f
-  languageName: node
-  linkType: hard
-
-"broccoli-sri-hash@npm:^2.1.0":
-  version: 2.1.2
-  resolution: "broccoli-sri-hash@npm:2.1.2"
-  dependencies:
-    broccoli-caching-writer: "npm:^2.2.0"
-    mkdirp: "npm:^0.5.1"
-    rsvp: "npm:^3.1.0"
-    sri-toolbox: "npm:^0.2.0"
-    symlink-or-copy: "npm:^1.0.1"
-  checksum: 10c0/b957e96ef14f9fa7f7d28349bdc2af2123e6dac88fb3c7b7bcc85fc6567128c377587a821bed0e690f078aa8cbd8022905c335ae16b0d64bf372b191b8fe03e4
   languageName: node
   linkType: hard
 
@@ -6701,15 +6652,6 @@ __metadata:
     broccoli-funnel: "npm:^3.0.8"
     debug: "npm:^4.3.2"
   checksum: 10c0/dc8e6a935e34e83a53e6a0d411e5dc734f88ede37dd5036089fe588d074d65c34075a810cbf6b6d630b9ff8d705be2b4cc627eab921054588e9e364d27aed42e
-  languageName: node
-  linkType: hard
-
-"ember-cli-sri@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "ember-cli-sri@npm:2.1.1"
-  dependencies:
-    broccoli-sri-hash: "npm:^2.1.0"
-  checksum: 10c0/35b7fbeefd29a21f256f0bf6782b156e5913de838b7546a28c9b906a5e78e9e7decb84c978a5922b9f2521dbc5e01c9082bb14c9157f31123afef3079df652cb
   languageName: node
   linkType: hard
 
@@ -12871,7 +12813,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rsvp@npm:^3.0.14, rsvp@npm:^3.0.17, rsvp@npm:^3.0.18, rsvp@npm:^3.0.6, rsvp@npm:^3.1.0":
+"rsvp@npm:^3.0.14, rsvp@npm:^3.0.17, rsvp@npm:^3.0.18, rsvp@npm:^3.0.6":
   version: 3.6.2
   resolution: "rsvp@npm:3.6.2"
   checksum: 10c0/258c75eff146821f9c1d438535ed1a95384e4de12dc681647b0fcf9dee594cbb40eb43279ce4eee733fa440bc6a21177042ea137d80dcb386443b35dd904f161
@@ -13582,13 +13524,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sri-toolbox@npm:^0.2.0":
-  version: 0.2.0
-  resolution: "sri-toolbox@npm:0.2.0"
-  checksum: 10c0/6f9656126df10e4ca35168bed053743955af867641e7bc5743161606e9a0b9e69404250a2747813a9b6c8879e9483f882a6c6f2c426b59753cd9a925a7792e55
-  languageName: node
-  linkType: hard
-
 "stacktracey@npm:^2.1.8":
   version: 2.1.8
   resolution: "stacktracey@npm:2.1.8"
@@ -13946,7 +13881,6 @@ __metadata:
     ember-cli-dependency-checker: "npm:^3.3.2"
     ember-cli-htmlbars: "npm:^6.3.0"
     ember-cli-inject-live-reload: "npm:^2.1.0"
-    ember-cli-sri: "npm:^2.1.1"
     ember-cli-terser: "npm:^4.0.2"
     ember-data: "npm:~5.3.3"
     ember-fetch: "npm:^8.1.2"
@@ -14834,16 +14768,6 @@ __metadata:
   version: 1.1.2
   resolution: "vary@npm:1.1.2"
   checksum: 10c0/f15d588d79f3675135ba783c91a4083dcd290a2a5be9fcb6514220a1634e23df116847b1cc51f66bfb0644cf9353b2abb7815ae499bab06e46dd33c1a6bf1f4f
-  languageName: node
-  linkType: hard
-
-"walk-sync@npm:^0.2.5":
-  version: 0.2.7
-  resolution: "walk-sync@npm:0.2.7"
-  dependencies:
-    ensure-posix-path: "npm:^1.0.0"
-    matcher-collection: "npm:^1.0.0"
-  checksum: 10c0/c1ebe8e729b02b86748941ae0744f3e828a96568abcc4add18c7e61175669b734d90633b614aa76aa9ff663b06ca614d8fead6ae7a677d9079b6e421f48f6ae1
   languageName: node
   linkType: hard
 
