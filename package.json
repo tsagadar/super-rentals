@@ -23,7 +23,7 @@
     "start": "ember serve",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test",
-    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org husqvarna-ab --project ember-super-rentals-sandbox ./dist/assets && sentry-cli sourcemaps upload --org husqvarna-ab --project ember-super-rentals-sandbox ./dist/assets"
+    "sentry:sourcemaps": "sentry-cli sourcemaps inject --org husqvarna-ab --project ember-super-rentals-sandbox ./dist/assets && sentry-cli sourcemaps upload --org husqvarna-ab --project ember-super-rentals-sandbox ./dist/assets ; rm -f ./dist/assets/*.map"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
