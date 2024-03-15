@@ -13,6 +13,8 @@ module.exports = function (defaults) {
     require('dotenv').config();
   }
 
+  const prependUrl = "https://sentry.relar.ch/assets"
+
   const app = new EmberApp(defaults, {
     'ember-cli-terser': {
       enabled: true,
@@ -23,6 +25,14 @@ module.exports = function (defaults) {
     },
     sourcemaps: {
       enabled: true,
+    },
+    publicAssetURL: isProductionBuild() ? `${prependUrl || ''}/assets`.replace('//assets', '/assets') : undefined,
+    fingerprint: {
+      enabled: isProductionBuild(),
+      prepend: prependUrl,
+      extensions: ['js', 'css', 'png', 'jpg', 'gif', 'map', 'pdf', 'woff', 'svg', 'json', 'mp4'],
+      generateAssetMap: true,
+      fingerprintAssetMap: true,
     },
   });
 
