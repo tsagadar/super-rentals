@@ -13,17 +13,10 @@ module.exports = function (defaults) {
     require('dotenv').config();
   }
 
-  const prependUrl = "https://sentry.relar.ch/";
-
   const app = new EmberApp(defaults, {
     'ember-cli-terser': {
       enabled: true,
-    },
-    minifyCSS: {
-      enabled: true,
-    },
-    minifyJS: {
-      enabled: true
+      hiddenSourceMap: true,
     },
     babel: {
       sourceMaps: 'inline',
