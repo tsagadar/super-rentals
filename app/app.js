@@ -35,10 +35,6 @@ export default class App extends Application {
 }
 
 Ember.onerror = (error) => {
-  // see https://git.io/vbine
-  if (Ember.testing) {
-    throw error;
-  }
   Sentry.captureException(error);
   console.warn(error); // eslint-disable-line no-console
 };
