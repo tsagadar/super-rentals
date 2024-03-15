@@ -22,6 +22,12 @@ module.exports = function (defaults) {
     minifyCSS: {
       enabled: true,
     },
+    minifyJS: {
+      enabled: true
+    },
+    babel: {
+      sourceMaps: 'inline',
+    },
     sourcemaps: {
       enabled: true,
     },
