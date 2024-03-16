@@ -6702,12 +6702,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ember-cli-terser@npm:^4.0.2":
-  version: 4.0.2
-  resolution: "ember-cli-terser@npm:4.0.2"
+"ember-cli-terser@npm:4.0.1":
+  version: 4.0.1
+  resolution: "ember-cli-terser@npm:4.0.1"
   dependencies:
     broccoli-terser-sourcemap: "npm:^4.1.0"
-  checksum: 10c0/7e073a533074afad4ada419e197d6e9532feda9e50b4fefac82028215cf897b5ad158c0de430cd8654e8157a663cfa2e6c09e0c7727f31a720fadec38cda966a
+  checksum: 10c0/e061224a4b5926da24562a712b3d1fb91bfe31309fa41b1ea124fd5f0a4e9f8db4730d7b1b46b049992c769aae2cb735de70118aac62f94ffcc1e1824af1dc2e
   languageName: node
   linkType: hard
 
@@ -13949,7 +13949,7 @@ __metadata:
     ember-cli-dependency-checker: "npm:^3.3.2"
     ember-cli-htmlbars: "npm:^6.3.0"
     ember-cli-inject-live-reload: "npm:^2.1.0"
-    ember-cli-terser: "npm:^4.0.2"
+    ember-cli-terser: "npm:4.0.1"
     ember-data: "npm:~5.3.3"
     ember-fetch: "npm:^8.1.2"
     ember-load-initializers: "npm:^2.1.2"
